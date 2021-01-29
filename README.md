@@ -3,7 +3,7 @@
 ![Imagem preview](./assets/img/imagem-readme.png)
 > Um pequeno card de produto a ser vendido.
 
-##### Ajustes e melhorias
+## Ajustes e melhorias
 O projeto ainda está em desenvolvimento e as seguintes atualizações serão feitas.
 
 - [ ] Trocar as cores do layout de acordo com a cor selecionada.
