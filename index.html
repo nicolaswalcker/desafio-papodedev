@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Epic React Flyknit 2</title>
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="card" class="container">
+            <img id="tenis" class="tenis"
+                src="./assets/img/tenis-azul.svg"
+                alt=""
+            />
+
+            <div class="product-infos">
+                <p>Nike</p>
+                <h2>Epic React Flyknit 2</h2>
+            </div>
+
+            <div class="price">
+                <p>R$</p><p id="preco">359,00</p>
+                
+            </div>
+
+            <div class="colors">
+                <p>Cores:</p>
+                <nav class="select-colors">
+                    <button value="blue" id="blue" onclick="changeBlue();"></button>
+                    <button value="red" id="red" onclick="changeRed();"></button>
+                    <button value="green" id="green" onclick="changeGreen();"></button>
+                </nav>
+            </div>
+            <div class="tamanhos">
+                <p>Tamanhos:</p>
+                <div class="select-size">
+                    <div id="s41" onclick=""><p>41</p></div>
+                    <div id="s42" onclick=""><p>42</p></div>
+                    <div id="s43" onclick=""><p>43</p></div>
+                    <div id="s44" onclick=""><p>44</p></div>
+                </div>
+            </div>
+
+            <div class="botao-compra">
+                <a href="#"><img src="./assets/img/Carrinho.svg" alt=""></a>
+                
+            </div>
+        </div>
+    </body>
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+        crossorigin="anonymous"
+    />
+    <script src="./script.js"></script>
+</html>

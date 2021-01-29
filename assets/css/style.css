@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Colocando o card no centro e pintando fundo */
+body {
+    position: absolute;
+    background: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Colocando tamanho e cor no card */
+body .container {
+    background: white;
+    position: relative;
+    width: 263px;
+    height: 386px;
+    box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+    border-radius: 16px 50px 16px 16px;
+    padding: 20px;
+}
+
+/*Colocando tenis em cima do card*/
+body .container .tenis{
+    position: absolute;
+    bottom: 160px;
+    left: -25px;
+}
+
+/* Área das informações do produto */
+.product-infos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+
+}
+ .product-infos p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #8F8F8F;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.product-infos h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #29455F;
+}
+
+
+/* Área do preço */
+.price {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;  
+}
+
+.price p{
+    text-align: right;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #808080;
+    margin-right: 5px;
+}
+
+#preco {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #29455F;
+}
+
+/*Área das opções de cores*/
+.colors {
+    margin-top: 16px;
+}
+
+.colors p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #808080;
+}
+
+.colors button{
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    border: none;
+    margin-right: 23px;
+    margin-top: 6px;
+    opacity: 100%;
+}
+
+.colors button:nth-child(1){
+    background: blue;
+}
+.colors button:nth-child(2){
+    background: red;
+}
+.colors button:nth-child(3){
+    background: #B5DB48;
+}
+
+/*"Animando os botões de cores"*/
+
+.colors button:hover {
+    opacity: 60%;
+    border: 1px solid #c0c0c0 ;
+    cursor: pointer;
+}
+
+/*Cuidando dos tamanhos*/
+.tamanhos {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.tamanhos p{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #808080;
+    text-align: center;
+}
+
+.tamanhos > div > div > p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #808080;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+
+.tamanhos > div > div{
+    width: 25px;
+    height: 25px;
+    left: 239px;
+    top: 646px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    margin-right: 11px;
+    margin-top: 8px;
+
+} 
+.tamanhos > div > div:hover{
+    background-color: #B5DB48;
+    cursor: pointer;
+}
+
+.tamanhos > div > div > p:hover{
+    color: white;
+}
+
+.tamanhos > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botao-compra{
+    position: absolute;
+    text-align: right;
+    right: 20px;
+    top: 280px;
+    opacity: 80%;
+}
+
+.botao-compra:hover {
+    opacity: 100%;
+    animation: fluctuating 1s linear infinite;
+}
+
+@keyframes fluctuating {
+	0% {
+		transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-5px)
+    }
+    50% {
+        transform: translateY(0px)
+    }
+    75% {
+        transform: translateY(5px)
+    }
+	100% {
+        transform: translateY(0px)
+    }
+    
+}
+
+
+.animation{
+    animation: changeshoes .6s linear;
+}
+
+
+@keyframes changeshoes {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+      }
+      25%{
+        transform: scale(.3);
+        opacity: .3;
+      }
+
+      50%{
+        transform: scale(.5);
+        opacity: .5;
+      }
+
+      75% {
+        transform: scale(.7);
+        opacity: .7;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+}
+
