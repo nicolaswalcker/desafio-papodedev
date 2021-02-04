@@ -130,6 +130,27 @@ body .container .tenis{
 }
 
 /*Cuidando dos tamanhos*/
+.tamanhos .button{
+    width: 25px;
+    height: 25px;
+    left: 239px;
+    top: 646px;
+    /*Ajustandoele ao centro*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 11px;
+    margin-top: 8px;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #808080;
+
+}
 .tamanhos {
     margin-top: 15px;
     display: flex;
@@ -147,42 +168,16 @@ body .container .tenis{
     text-align: center;
 }
 
-.tamanhos > div > div > p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 15px;
-    color: #808080;
-    text-align: center;
-    width: 25px;
-    height: 25px;
-}
-
-.tamanhos > div > div{
-    width: 25px;
-    height: 25px;
-    left: 239px;
-    top: 646px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    border-radius: 8px;
-    margin-right: 11px;
-    margin-top: 8px;
-
-} 
-.tamanhos > div > div:hover{
-    background-color: #B5DB48;
-    cursor: pointer;
-}
-
-.tamanhos > div > div > p:hover{
+.button:hover{
     color: white;
+    background: #B5DB48;
+    
+}
+
+.active{
+    background: #B5DB48;
+    color: white;
+    border-radius: .5rem;
 }
 
 .tamanhos > div {

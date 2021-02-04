@@ -1,7 +1,6 @@
 function changeBlue() {
     document.getElementById("tenis").classList.add('animation');setTimeout(function() {
-        document.getElementById("tenis").src = "/assets/img/tenis-azul.svg";
-        
+        document.getElementById("tenis").src = "/assets/img/tenis-azul.svg"; 
     }, 200);
     setTimeout(function(){
         document.getElementById("tenis").classList.remove('animation');
@@ -19,7 +18,7 @@ function changeRed() {
 }
 function changeGreen() {
     document.getElementById("tenis").classList.add('animation');setTimeout(function() {
-        document.getElementById("tenis").src = "/assets/img/tenis-verde.svg";
+        document.getElementById("tenis").src = "/assets/img/tenis-verde.svg";       
     }, 200);
     setTimeout(function(){
         document.getElementById("tenis").classList.remove('animation');
@@ -28,5 +27,7 @@ function changeGreen() {
 }
 
 
-
+function selecionado(){
+    document.querySelector('button').classList.add('active')
+}
 
